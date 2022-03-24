@@ -1,0 +1,280 @@
+<body><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="static/css/fontawesome.css">
+<style>
+body {
+  background-color: white;
+  font-family: cursive;
+}
+
+.glow {
+  color: crimson;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+</style>
+
+</head>
+<body>
+<div class="container pt-5">
+    <center>
+        <h3 class="glow">GLOWING TEXT</h3>
+    </center>
+    <br><br>
+
+<h6 class="text-danger">{{ msg }}</h6>
+
+<form action="/pdf" method="POST" enctype="multipart/form-data">
+
+    <input type="hidden" value="{{ number }}" name="number">
+<div class="card mb-2 rounded-0">
+    <div class="card-header bg-dark text-light rounded-0">
+        <h5 class="">My details</h5>
+    </div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-md-6">
+                <label >Enter name</label>
+                <input type="text" class="form-control form-control-primary mb-1 rounded-0" placeholder="enter home" name="name">
+            </div>
+            <div class="col-md-6">
+                <label >Enter Home</label>
+                <input type="text" class="form-control form-control-primary mb-1 rounded-0" placeholder="enter home" name="home">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+
+
+        <div class="col-md-6 mb-2">
+            <div class="card rounded-0">
+                <div class="card-header  bg-dark text-light rounded-0">
+                    <h5 class="">DAY 1</h5>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-12 mb-1">
+                            <label>Date</label>
+                            <input type="date" class="form-control form-control-warning rounded-0" name="date001">
+                        </div>
+
+                        <div class="col-md-6 mb-1">
+                            <label >Area</label>
+                            <input type="text" class="form-control form-control-primary rounded-0" placeholder="Area" name="Area001">
+                        </div>
+                        <div class="col-md-6 mb-1">
+                            <label >Total</label>
+                            <input type="text" class="form-control form-control-primary rounded-0" placeholder="Total" name="total001">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 mb-2">
+            <div class="card rounded-0">
+                <div class="card-header  bg-dark text-light rounded-0">
+                    <h5 class="">DAY 2</h5>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-12 mb-1">
+                            <label>Date</label>
+                            <input type="date" class="form-control form-control-warning rounded-0" name="date002">
+                        </div>
+
+                        <div class="col-md-6 mb-1">
+                            <label >Area</label>
+                            <input type="text" class="form-control form-control-primary rounded-0" placeholder="area" name="Area002">
+                        </div>
+                        <div class="col-md-6 mb-1">
+                            <label >Total</label>
+                            <input type="text" class="form-control form-control-primary rounded-0" placeholder="total" name="total002">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-2">
+            <div class="card rounded-0">
+                <div class="card-header  bg-dark text-light rounded-0">
+                    <h5 class="">DAY 3</h5>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-12 mb-1">
+                            <label>Date</label>
+                            <input type="date" class="form-control form-control-warning rounded-0" name="date003">
+                        </div>
+
+                        <div class="col-md-6 mb-1">
+                            <label >Area</label>
+                            <input type="text" class="form-control form-control-primary rounded-0" placeholder="area" name="Area003">
+                         </div>
+                        <div class="col-md-6 mb-1">
+                            <label >Total</label>
+                            <input type="text" class="form-control form-control-primary rounded-0" placeholder="total" name="total003">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-2">
+            <div class="card rounded-0">
+                <div class="card-header  bg-dark text-light rounded-0">
+                    <h5 class="">DAY 4</h5>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-12 mb-1">
+                            <label>Date</label>
+                            <input type="date" class="form-control form-control-warning rounded-0" name="date004">
+                        </div>
+
+                        <div class="col-md-6 mb-1">
+                            <label >Area</label>
+                            <input type="text" class="form-control form-control-primary rounded-0" placeholder="area" name="Area004">
+                        </div>
+                        <div class="col-md-6 mb-1">
+                            <label >Total</label>
+                            <input type="text" class="form-control form-control-primary rounded-0" placeholder="total" name="total004">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-2">
+            <div class="card rounded-0">
+                <div class="card-header  bg-dark text-light rounded-0">
+                    <h5 class="">DAY 5</h5>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-12 mb-1">
+                            <label>Date</label>
+                            <input type="date" class="form-control form-control-warning rounded-0" name="date005" >
+                        </div>
+                        <div class="col-md-6 mb-1">
+                            <label >Area</label>
+                            <input type="text" class="form-control form-control-primary rounded-0" placeholder="Area" name="Area005">
+                        </div>
+                        <div class="col-md-6 mb-1">
+                            <label >Total</label>
+                            <input type="text" class="form-control form-control-primary rounded-0" placeholder="total" name="total005" >
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 mb-2">
+            <div class="card rounded-0">
+                <div class="card-header  bg-dark text-light rounded-0">
+                    <h5 class="">DAY 6</h5>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-12 mb-1">
+                            <label>Date</label>
+                            <input type="date" class="form-control form-control-warning rounded-0" name="date006" >
+                        </div>
+                        <div class="col-md-6 mb-1">
+                            <label >Area</label>
+                            <input type="text" class="form-control form-control-primary rounded-0" placeholder="Area" name="Area006">
+                        </div>
+                        <div class="col-md-6 mb-1">
+                            <label >Total</label>
+                            <input type="text" class="form-control form-control-primary  rounded-0" placeholder="total" name="total006" >
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-md-6 mb-2">
+                <div class="card rounded-0">
+                    <div class="card-body">
+                        <label>Upload signature photo</label>
+                        <input type="file" class="form-control btn btn-outline-theme rounded-0" name="image">
+                    </div>
+                </div>
+
+        </div>
+        <div class="col-md-6">
+                <div class="card rounded-0">
+                    <div class="card-body">
+                        <label>save the fare sheet</label>
+                        <a href="static/pdf/fareSheet({number}).pdf" download="fare sheet">
+                        </a>
+
+                            <button class="btn btn-outline-success btn-block rounded-0"><strong>Submit Form</strong></button>
+
+                    </div>
+                </div>
+        </div>
+    </div>
+
+
+
+    <!--/Default modal-->
+
+</form>
+
+
+</div>
+
+        <div class="container mb-3">
+            <center>
+                <h4  class="glow"><i class="fa fa-whatsapp  mr-2"></i>0723116674 - AIRBUILD</h4>
+            </center>
+        </div>
+
+
+
+
+</body>
+
+    <!-- Page JavaScript Files-->
+    <script src="static/js/jquery.min.js"></script>
+    <!--Popper JS-->
+    <script src="static/js/popper.min.js"></script>
+    <!--Bootstrap-->
+    <script src="static/js/bootstrap.min.js"></script>
+    <!--Sweet alert JS-->
+
+    <!--Custom Js Script-->
+    <script src="static/js/custom.js"></script>
+    <!--Custom Js Script-->
+
+    <script src="static/js/form.js"></script>
+
+</html>
+
+
+
+
+
+
+
+
